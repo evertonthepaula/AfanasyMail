@@ -1,0 +1,76 @@
+<html>
+<head>
+<style type="text/css">
+.box-informacoes {width: 84%;min-height: 87px;background: #eee;margin: 0 0 10px 0;border: 1px solid #eee;}
+b{line-height:16px;font-size:12px; font: Arial, Verdana, sans-serif;color:#3e3e3e;}
+p{line-height:16px;font-size:12px; font:Arial, Verdana, sans-serif;color:#3e3e3e;}
+.msg-cliente {width: 100%;height: auto;text-align:right;background: #eee;}
+.email-left {width: 100%;height: 16px;text-align:left;background: #cccccc;border-bottom: 2px solid #fff;}
+.email-left-msg {width: 100%;min-height: 100px;background: #cccccc;}
+.msg-content {height: auto;}
+.msg-content p {text-align: justify;padding: 0px 5px;}
+.clear{clear:both;}
+
+.box-cotacoes {width: 80%;min-height: 87px;background: #fff;margin: 0 0 10px 0;border: 1px solid #eee;}
+.titu{text-align:left;display:block;clear: both;}
+.left_titu{width:24.7%;float:left;background-color:#cccccc;margin:0 0.3% 2px 0;}
+.right_titu{width:75%;float:left;background-color:#cccccc;}
+.right_titu b, .left_titu b{padding-left:6px;}
+.descricoes{text-align:left;display:block;clear: both;}
+.left_information{width:24.7%;float:left;margin-right:0.3%;}
+.right_information{width:75%;float:right;}
+.texto_descricoes{background-color:#eee;margin-bottom:2px;min-height: 16px;padding-left:6px;}
+.rodapeses{text-align:right;background-color:#cccccc;display:block;width:100%;clear: both;}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body style="font: 12px Arial, Verdana, sans-serif; margin: 0;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="354" align="center" valign="top">
+            <table width="768" border="0" cellpadding="0" cellspacing="0" style="border: #d2d5da thin solid;">
+              <tr>
+                <td align="center" valign="top">
+                    <a href="<?=URL_SITE?>" target="_blank">
+                        <img src="<?=URL_SITE?>papel_carta/topo_papelcarta.png" height="130" border="0">
+                    </a>
+                </td>
+              </tr>
+              <tr>
+                <td width="768" align="left" valign="top" style="font: 12px Verdana, Geneva, sans-serif; padding: 10px;">
+                    <?=$corpo?>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" style="padding: 10px 10px 25px;">
+                    <p style="font: 12px Arial, Verdana, sans-serif;">
+                        Atenciosamente,<br>
+                        Equipe de relacionamento da <b> <?=TITULO_SITE?>.</b>
+                    </p>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#AF0404" height="55" align="center" valign="middle">
+                    <p>
+                        <span style="font: 16px Arial, Verdana, sans-serif; font-weight: bold; color: #EEEEEE;">
+                            <?=$emp_tel?>
+                        </span><br/>
+                        <span style="font: 12px Arial, Verdana, sans-serif; color: #EEEEEE;">
+                            <?=$logradouro?>, 
+                            <?=$numero?>, 
+                            <?=$cidade?>- 
+                            <?=$bairro?><br>
+                            CEP <?=$cep?>
+                        </span>
+                    </p>
+                </td>
+              </tr>
+            </table>
+            <p style="color: #666666; font: 10px Arial, Verdana, sans-serif; margin: 5px;">
+                <a href="" title="" target="_blank" style="color: #666666; text-decoration: none;"> | <?=date("Y")?></a>
+            </p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

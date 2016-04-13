@@ -1,0 +1,61 @@
+<font style="line-height:16px;font-size:12px;" face="Arial, Verdana, sans-serif" color="#3e3e3e">
+<b>Ol&aacute; <?=$nome?></b>,<br>
+<p>
+Recebemos seu pedido de or&ccedil;amento feito em <b>'<?=date("d/m/Y")?>'</b> às <b>'<?=date("H:i:s")?>'.</b>
+</p>
+<p>
+A partir de agora, vamos analisar os dados enviados e entraremos novamente em contato. 
+</p>
+<p>
+<b>Origem do contato</b><br>
+Esta mensagem foi enviada partindo do endereço <b>'<?=$ip?>'</b> em <b>'<?=date("d/m/Y")?>'</b> às <b>'<?=date("H:i:s")?>'</b>.
+</p>
+<p><b>Tipo de solicitação:</b> '<?=$tipo?></p>
+<b>Dados Fornecidos:</b>
+<div align="center">
+<table width="85%">
+    <tbody>
+        <tr width="100%" bgcolor="#cccccc">
+            <td width="24.7%" style="padding-left:6px;"><b>Dados pessoais</b></td><
+            <td width="75%" style="padding-left:6px;"><b>Informações fornecidas</b></td>
+        </tr>
+        <tr width="100%" bgcolor="#eeeeee">
+            <td width="24.7%" style="padding-left:6px;"><p style="margin:0;">Nome do Contactante</p></td>
+            <td style="padding-left:6px;"><p style="margin:0;"><?=$nome?></p></td>
+        </tr>
+        <tr width="100%" bgcolor="#eeeeee">
+            <td width="24.7%" style="padding-left:6px;"><p style="margin:0;">E-mail</p></td>
+            <td style="padding-left:6px;"><p style="margin:0;">'<?=$email?></p></td>
+        </tr>
+        <tr width="100%" bgcolor="#eeeeee">
+            <td width="24.7%" style="padding-left:6px;"><p style="margin:0;">Telefone</p></td>
+            <td style="padding-left:6px;"><p style="margin:0;"><?=$telefone?></p></td>
+        </tr>
+        <tr width="100%" bgcolor="#eeeeee">
+            <td width="24.7%" style="padding-left:6px;"><p style="margin:0;">Cidade</p></td>
+            <td style="padding-left:6px;"><p style="margin:0;"><?=$cidade?></p></td>
+        </tr>
+        <tr width="100%" bgcolor="#eeeeee">
+            <td width="24.7%" style="padding-left:6px;"><p style="margin:0;">Estado</p></td><
+            <td style="padding-left:6px;"><p style="margin:0;"><?=$estado?></p></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr width="100%" bgcolor="#cccccc">
+            <td width="24.7%" style="padding-left:6px;"><b>Mensagem</b></td>
+            <td width="75%" style="padding-left:6px;"><b>Informações fornecidas</b></td><
+        </tr>
+        <tr width="100%" bgcolor="#eeeeee">
+            <td style="padding-left:6px;"><p style="margin:0;">mensagem</p></td>
+            <td style="padding-left:6px;"><p style="margin:0;"><?=nl2br($mensagem)?></p></td>
+        </tr>
+        <tr width="100%" bgcolor="#cccccc">
+            <td colspan="2" width="100%" style="padding-left:10px;text-align:right;"><b>Informações sujeitas à confirmação</b></td>
+        </tr>
+    </tbody>                  
+</table>
+</div>
+<div class="clear"></div>
+<p>Pedimos que aguarde, em breve enviaremos um novo e-mail respondendo seu contato ou se necessário, poderemos ligar diretamente para você.</p><br>
+<b>Obrigado pela confiança!</b>
+</font>
